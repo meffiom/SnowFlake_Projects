@@ -150,20 +150,7 @@ snowroute-supply-chain/
 │   ├── 01_dimension_tables.sql
 │   ├── 02_fact_table.sql
 │   └── 03_kpi_views_and_materialized_view.sql
-│
-├── snowpark/
-│   ├── 01_snowpark_risk_scores.sql
-│   └── 02_dynamic_table.sql
-│
-├── docs/
-│   ├── medallion_architecture.jpg
-│   ├── dashboard_page1.png
-│   ├── dashboard_page2.png
-│   ├── dashboard_page3.png
-│   └── dashboard_page4.png
-│
-└── dashboard/
-    └── SnowRoute.pbix
+└── SnowRoute.pbix
 ```
 ---
 
