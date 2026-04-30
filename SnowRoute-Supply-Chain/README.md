@@ -57,25 +57,26 @@ orders through the delayed channel than the on-time channel.
 The platform uses a three-layer medallion architecture 
 inside Snowflake. Each layer has one responsibility.
 
+```
 CSV File (91MB)
-│
-│  COPY INTO + Internal Stage
-▼
+     │
+     │  COPY INTO + Internal Stage
+     ▼
 ┌─────────────────────────────────┐
 │  BRONZE — RAW_DB.RAW            │
 │  All columns loaded as VARCHAR  │
 │  Time Travel · Stream · Task    │
 └────────────────┬────────────────┘
-│  Stream + Task (automatic)
-▼
+                 │  Stream + Task (automatic)
+                 ▼
 ┌─────────────────────────────────┐
 │  SILVER — STAGING_DB.STAGING    │
 │  TRY_CAST · date parsing        │
 │  delivery_delay_days · is_late  │
 │  delay_severity · profit_margin │
 └────────────────┬────────────────┘
-│  SQL build
-▼
+                 │  SQL build
+                 ▼
 ┌─────────────────────────────────┐
 │  GOLD — ANALYTICS_DB            │
 │  Star schema · 5 KPI views      │
@@ -83,10 +84,10 @@ CSV File (91MB)
 │  Snowpark risk scores           │
 │  Python UDF · Dynamic Table     │
 └────────────────┬────────────────┘
-│  Power BI connector
-▼
-4-page Dashboard
-
+                 │  Power BI connector
+                 ▼
+        4-page Dashboard
+```
 ---
 
 
@@ -127,6 +128,7 @@ CSV File (91MB)
 
 ## Repository Structure
 
+```
 snowroute-supply-chain/
 │
 ├── setup/
@@ -149,14 +151,20 @@ snowroute-supply-chain/
 │   ├── 02_fact_table.sql
 │   └── 03_kpi_views_and_materialized_view.sql
 │
+├── snowpark/
+│   ├── 01_snowpark_risk_scores.sql
+│   └── 02_dynamic_table.sql
+│
 ├── docs/
 │   ├── medallion_architecture.jpg
 │   ├── dashboard_page1.png
 │   ├── dashboard_page2.png
 │   ├── dashboard_page3.png
 │   └── dashboard_page4.png
-└── SnowRoute.pbix
-
+│
+└── dashboard/
+    └── SnowRoute.pbix
+```
 ---
 
 ## How to Reproduce
