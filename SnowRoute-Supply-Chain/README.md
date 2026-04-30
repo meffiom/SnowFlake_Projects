@@ -241,3 +241,13 @@ DataCo Smart Supply Chain for Big Data Analysis
 kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis
 180,519 rows · Orders, shipments, customers, products,
 delivery status · Free to download
+
+## Dashboard
+<img width="1170" height="642" alt="Screenshot 2026-04-23 021715" src="https://github.com/user-attachments/assets/2ba63a6a-e59a-4afe-8e22-4974a8d82dec" />
+
+<img width="1135" height="640" alt="Screenshot 2026-04-23 021742" src="https://github.com/user-attachments/assets/c325a0d3-978c-48c8-a30b-5eb3956d3105" />
+
+<img width="1125" height="634" alt="Screenshot 2026-04-23 021841" src="https://github.com/user-attachments/assets/f91dfe02-9ca6-4eb7-8b84-9a2c0a975faa" />
+
+<img width="1119" height="628" alt="Screenshot 2026-04-23 021858" src="https://github.com/user-attachments/assets/0c75ed51-5cc6-4ccc-9590-e2153f51efaa" />
+
