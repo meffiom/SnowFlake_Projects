@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: raw
+    database: CAFE_REWARDS
+    schema: RAW
+    tables:
+      - name: customers
+        description: Raw customer data from Cafe Rewards program
+      - name: offers
+        description: Raw offers/campaigns sent to customers
+      - name: events
+        description: Raw events including transactions and offer interactions
